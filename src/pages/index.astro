@@ -19,6 +19,7 @@ import PantalaMap from '../assets/Pantala-Medium.png';
 import YouTubeVideo from '../components/YouTubeVideo.astro';
 import { Image } from 'astro:assets';
 import LegalDisclaimer from '../components/LegalDisclaimer.astro';
+import SplitList from '../components/SplitList.astro';
 ---
 
 <!doctype html>
@@ -60,7 +61,7 @@ import LegalDisclaimer from '../components/LegalDisclaimer.astro';
 					</Button>
 				</Center>
 				<h3>We also have all this neat stuff!</h3>
-				<ul>
+				<SplitList>
 					<li>Absolutely no pay walled content</li>
 					<li>Advanced personal build protection</li>
 					<li>Toggle pllayer combat on and off at will</li>
@@ -77,7 +78,8 @@ import LegalDisclaimer from '../components/LegalDisclaimer.astro';
 					<li>The Block Pit resource farm</li>
 					<li>The Instasmelter instant furnace</li>
 					<li>And even more!</li>
-				</ul>
+				</SplitList>
+				<hr />
 				<Tagline>We’ve come a long way from a small server, having grown into the flourishing, ever-growing community we are today. Our staff team has continued to cultivate the server, allowing future generations of young readers to partake in a fun, safe server that they can enjoy. All staff on the server are volunteers and are very passionate about keeping both the Discord and Minecraft communities safe.</Tagline>
 				<Center>
 					<Group>
@@ -85,6 +87,7 @@ import LegalDisclaimer from '../components/LegalDisclaimer.astro';
 						<Button secondary href="https://wiki.woftnw.org/wiki/History">Learn the History</Button>
 					</Group>
 				</Center>
+				<hr />
 				<Picture src={PyrrhiaMap} alt="A map of Pyrrhia" formats={['avif', 'webp']} />
 				<Picture src={PantalaMap} alt="A map of Pantala" formats={['avif', 'webp']} />
 				<Center>
