@@ -1,6 +1,7 @@
 ---
 // Usage: <Button href="/" secondary>Go Home</Button>
 const { href, secondary } = Astro.props;
+import "../styles/global.css"
 ---
 
 <a class={"button " + (secondary ? "secondary" : "primary")} href={href}>
@@ -9,7 +10,7 @@ const { href, secondary } = Astro.props;
 
 <style>
 	.button {
-		border-radius: 13px;
+		border-radius: var(--radius);
 		color: white;
 		transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 		font-weight: 700;
